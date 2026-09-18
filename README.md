@@ -37,7 +37,8 @@ evidence-based findings.
 ## Installation
 
 ```bash
-git clone <repo-url> bd-osint && cd bd-osint
+ https://github.com/blackhelixunit/bd-osint.git
+ && cd bd-osint
 bash setup.sh            # or: python3 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt
 # optional:
 sudo apt install graphviz nmap
