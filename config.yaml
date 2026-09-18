@@ -1,0 +1,19 @@
+general:
+  timeout: 15
+  concurrency: 5
+  cache_ttl: 86400
+
+rate_limits:
+  default_delay: 1.5
+  gov_bd_delay: 3.0
+
+providers:
+  crtsh: true
+  wayback: true
+  rdap: true
+
+authorized:
+  enabled: false
+
+cache:
+  directory: cache

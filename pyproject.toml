@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bd-osint"
+version = "3.0.0"
+description = "BD-OSINT v3 - Bangladesh-focused passive OSINT and defensive reconnaissance framework"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "BD-OSINT Contributors" }]
+keywords = ["osint", "reconnaissance", "bangladesh", "security", "defensive"]
+dependencies = [
+    "requests>=2.31.0",
+    "dnspython>=2.4.0",
+    "beautifulsoup4>=4.12.0",
+    "python-dateutil>=2.8.0",
+    "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4.0"]
+
+[project.scripts]
+bdosint = "bdosint.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["bdosint*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
